@@ -173,7 +173,136 @@
       <section class="card" id="javascript-section">
         <h2>Javascript</h2>
         <ul>
-          <li>Enter JS notes here.</li>
+          <li>
+            Javascript is a high-level dynamic programming language that allows
+            users to interact with websites
+          </li>
+          <li>
+            Javascropt file must be linked to html file, similarly to CSS, but
+            using the script element at the bottom of the body
+          </li>
+          <ul>
+            <li>
+              Link is placed on the line directly above the closing body element
+              - this is to ensure that the html is able to load on the page
+              before the browser attempts to run the script
+            </li>
+          </ul>
+          <li>
+            Document Object Model (DOM) API has the capability to manipulate
+            documents
+          </li>
+          <li>
+            Variables: Containers that store values, declared by the word let
+            followed by the intended variable's name
+          </li>
+          <ul>
+            <li>
+              Variable names usually start with a letter, underscore, or dollar
+              sign
+            </li>
+            <li>
+              Numbers can be used after the starting character (Ex. temp99)
+            </li>
+            <li>
+              JS is case sensitive, so A-Z and a-z can also be used and will be
+              considered unique
+            </li>
+          </ul>
+          <li>
+            Semicolons are the end of a line indicates where the statement ends
+          </li>
+          <li>
+            Naming and declaring variables are not the same thing and can be
+            accomplished on one line by typing: let (declaration) myVariable
+            (variable name) = "value of variable" (assigns value to variable)
+          </li>
+          <li>Variables are retrieved by calling the variable name</li>
+          <li>
+            Variable names can be changed later in the code by typing:
+            variableName = "New value"
+          </li>
+          <li>Data Types</li>
+          <ul>
+            <li>
+              String: a sequence of text signified by the use of single or
+              double quote marks
+            </li>
+            <li>
+              Number: A number (obviously). Numbers do not have quotes around
+              them
+            </li>
+            <li>
+              Boolean: true/false value. True and false are special values and
+              do not need quotes
+            </li>
+            <li>
+              Array: a structure that allows multiple values to be stored in a
+              single reference
+            </li>
+            <ul>
+              <li>Example: let myVariable = [1, 'Bob', 'Steve', 10]</li>
+              <li>
+                Members of arrays are referred to by number, starting with 0.
+                Example: myVariable[0] would return the value 1
+              </li>
+            </ul>
+            <li>
+              Object: This can be anything. Everything in JS is an object and
+              can be stored in a variable
+            </li>
+          </ul>
+          <li>
+            Operators: mathematical symbols that produce a result based on two
+            values (or variables)
+          </li>
+          <ul>
+            <li>Addition (+): add two numbers or combine two strings</li>
+            <li>
+              Subtraction, Multiplication, Division (-, *, /): Do basic math
+            </li>
+            <li>Assignment (=): Assigns a value to a variable</li>
+            <li>
+              Strict Equality (===): Performs a test to see if two values are
+              equal and returns a boolean result
+            </li>
+            <li>
+              Not, Does-not-equal (!, !==): (!) Returns the logically opposite
+              value of what it precedes, like turning true into false. (!==)
+              Tests whether two values are not equal
+            </li>
+          </ul>
+          <li>
+            Conditionals: code structure that tests if an expression returns
+            true or not, commonly if...else
+          </li>
+          <ul>
+            <li>
+              if(variableName === "value") { alert ("text"); } else { alert
+              ("text"); }
+            </li>
+            <li>
+              The expression inside the if() is the test and uses the equality
+              operator to compare the variableName with the variableValue to see
+              if they are equal
+            </li>
+          </ul>
+          <li>
+            Functions: a way of packaging functionality that you wish to reuse
+          </li>
+          <ul>
+            <li>
+              Can be built in, or created by developer using
+              function-fuctionName(argument(s))
+            </li>
+            <li>
+              Return statement tells the browser to return the result variable
+              out of the function so it is available to use. Variables defined
+              inside functions are ONLY available inside those functions
+              (variable scoping)
+            </li>
+          </ul>
+          <li>Events</li>
         </ul>
       </section>
     </main>
@@ -181,5 +310,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="assets/script.js"></script>
   </body>
 </html>
