@@ -303,6 +303,49 @@
             </li>
           </ul>
           <li>Events</li>
+          <ul>
+            <li>
+              Event handlers are code structures that listen for activity in the
+              browser, and run code in response
+            </li>
+            <li>
+              Example: click event - this event is fired by the browser when you
+              click on something with your mouse
+            </li>
+            <ul>
+              <li>
+                document.querySelector("button").addEventListener("click",
+                function() { alert("Ouch! Stop poking me!"); });
+              </li>
+              <li>
+                In this statement, the button element is selected.
+                addEventListener function adds an event to listen for, in this
+                case, click. Then, a function to run when the event happens is
+                added. In this case, the alert
+              </li>
+              <li>
+                If a function that is passed to addEventListener() has no name,
+                it is an anonymous function. Can also be written as:
+              </li>
+              <ul>
+                <li>
+                  document.querySelector("button").addEventListener("click", ()
+                  => { alert("Ouch! Stop poking me!"); });
+                </li>
+              </ul>
+            </ul>
+          </ul>
+          <li>Web Storage API</li>
+          <ul>
+            <li>
+              locaStorage.setItem(value, variable); - this saves the data in the
+              browser to be retrieved later
+            </li>
+          </ul>
+          <li>
+            Null is a special value in JS that refers to the
+            <strong>absence</strong> of a value
+          </li>
         </ul>
       </section>
     </main>
