@@ -214,6 +214,9 @@
             Semicolons are the end of a line indicates where the statement ends
           </li>
           <li>
+            Note that <strong>each</strong> line of JS ends with a semicolon
+          </li>
+          <li>
             Naming and declaring variables are not the same thing and can be
             accomplished on one line by typing: let (declaration) myVariable
             (variable name) = "value of variable" (assigns value to variable)
@@ -223,6 +226,12 @@
             Variable names can be changed later in the code by typing:
             variableName = "New value"
           </li>
+          <li>
+            var topics = "Programming, HTML, CSS, Git, JavaScript"; :created
+            variable called topics, which contains a string that includes the
+            topics covered so far
+          </li>
+          <li>Note that strings are always contained in quotation marks</li>
           <li>Data Types</li>
           <ul>
             <li>
@@ -246,6 +255,14 @@
               <li>
                 Members of arrays are referred to by number, starting with 0.
                 Example: myVariable[0] would return the value 1
+              </li>
+              <li>
+                Arrays are zero-indexed (start at zero) and sequential (increase
+                in a sequential order - 0, 1, 2, etc)
+              </li>
+              <li>
+                Example: Array var shapes = ["triangle", "square", "pentagon",
+                "circle"]; console.log(shapes[0]); Will output "triangle"
               </li>
             </ul>
             <li>
@@ -339,8 +356,8 @@
           <li>Web Storage API</li>
           <ul>
             <li>
-              locaStorage.setItem(value, variable); - this saves the data in the
-              browser to be retrieved later
+              localStorage.setItem(value, variable); - this saves the data in
+              the browser to be retrieved later
             </li>
           </ul>
           <li>
@@ -390,6 +407,117 @@
             that is truthy. Then, it will run the code in the curly brackets
             associated with that condition and break out of the if statement
           </li>
+          <li>For loops</li>
+          <ul>
+            <li>Contain three important statements</li>
+            <li>
+              First statement determines starting point by declaring a variable
+              and giving it a value
+            </li>
+            <ul>
+              <li>Example: var x = 0;</li>
+              <li>This says that the variable named x is equal to zero</li>
+            </ul>
+            <li>Second statement is the condition</li>
+            <ul>
+              <li>Example: x < shapes.length;</li>
+              <li>
+                This says if x is less than the length of the shapes array (in
+                this case, if x is less than four)
+              </li>
+            </ul>
+            <li>
+              Third statement is what allows the array to iterate over each item
+            </li>
+            <ul>
+              <li>
+                Example: x++ (shortcut for the value of the variable x + 1)
+              </li>
+              <li>This says to increase x by 1 every time the code loops</li>
+            </ul>
+            <li>
+              Example: for ( var x = 0; x < shapes.length; x++ ) {
+              console.log(shapes[x]); }
+            </li>
+            <li>
+              Breakdown of the above for loop: When computer hits the for loop
+              it will start with x being 0, since x is less than the length of
+              the shapes array (4), it will run the code inside the loop and log
+              the value of shapes[0] in the console. Then, it will increment x,
+              so now x is 1 and the loop starts over. This iterates (or repeats)
+              until x is 4 (the length of the array) making x === .length This
+              breaks the computer out of the loop and it can then move to the
+              next line of code.
+            </li>
+          </ul>
+          <li>
+            console.log()
+            <ul>
+              <li>
+                console refers to a test environment developers use to check
+                code
+              </li>
+              <li>
+                .log() is a method, or a set of instructions that can be
+                executed by a computer which returns the value of whatever we
+                add inside the parentheses to the console
+              </li>
+            </ul>
+          </li>
+
+          <li>Functions</li>
+          <ul>
+            <li>
+              Functions are a set of instructions that tell the computer how to
+              perform a certain task
+            </li>
+            <li>
+              As opposed to a for loop, functions are not automatically exectued
+              when the JS file is run - they must be called
+            </li>
+            <ul>
+              <li>
+                This makes the code more easily reusable since we can call it as
+                many times as we need. This also allows us to control where in
+                the control flow a task is executed, if it is executed at all
+              </li>
+              <li>
+                Functions are called by name wherever we want them to execute in
+                the code
+              </li>
+            </ul>
+          </ul>
+          <li>
+            To create: use the function keyword followed by a unique name (this
+            will be used whenever the function is called)
+          </li>
+          <li>
+            Function names are always followed by () which will be filled with
+            the function's defined parameters
+          </li>
+          <li>
+            Make sure any variables used inside the function are defined in a
+            line of code above the function itself
+          </li>
+          <li>
+            Math.floor() and Math.randon() are properties of Javascript's built
+            in Math object that can be used together to generate a random number
+          </li>
+          <ul>
+            <li>
+              Example: var randomTopic = topics[Math.floor(math.Random() *
+              topics.length)];
+            </li>
+            <li>
+              This says that the variable "randomTopic" is equal to a random
+              number between 0 and 1(math.Random) multiplied by 4 (the length of
+              the topics array) rounded down (math.Floor)
+            </li>
+            <li>
+              This tells the computer which index to look for when it loops
+              through the array
+            </li>
+          </ul>
         </ul>
       </section>
     </main>
