@@ -14,6 +14,8 @@ N/A
 
 This webpage contains sections filled with notes on general programming information, HTML, CSS, Git, and JavaScript. It can be used as a point of reference for basic coding concepts in the areas listed. If a user is unsure on what section to start with, opening the DevTools console will list each topic and provide a random topic to study first.
 
+https://adrenarose.github.io/prework-study-guide/
+
 ## Credits
 
 N/A
